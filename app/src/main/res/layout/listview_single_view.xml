@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:showDividers="none"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/minuteLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            tools:text="2 mins ago" />
+
+        <TextView
+            android:id="@+id/headlineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            tools:text="Headline: Pac-Man remains Game of the Year" />
+
+        <ImageView
+            android:id="@+id/bitmapImage"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            tools:background="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/DescriptionLabel"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Description: The Developer of Pac-Man remade Pac-Man with a hilarious addition to it...mosquitos insead of ghosts." />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:text="@string/readResourceLabel" />
+
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/commentNumber"
+                android:text="Comments: " />
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:id="@+id/commentNumber"
+                android:textSize="20sp"
+                android:textColor="#0000A0"
+
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="0" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
