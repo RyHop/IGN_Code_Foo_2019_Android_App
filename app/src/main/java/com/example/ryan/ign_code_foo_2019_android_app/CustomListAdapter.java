@@ -40,7 +40,6 @@ public class CustomListAdapter extends ArrayAdapter<Article> {
             }
         }
 
-        // Get the Word object located at this position in the list
         Article currentArticle = getItem(position);
 
 

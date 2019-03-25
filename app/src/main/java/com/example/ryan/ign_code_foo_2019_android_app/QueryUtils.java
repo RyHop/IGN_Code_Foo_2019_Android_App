@@ -158,9 +158,7 @@ public class QueryUtils {
                     String uRLDATE = spf.format(newDate);
 
 
-                    //Put the article in the List:String URL, String Title,  String Date, String Picture, String ID
 
-                    //
 
                     theArticles.add(new Article(URL, title, description, Date1, uRLDATE, Picture, ContentID));
 
